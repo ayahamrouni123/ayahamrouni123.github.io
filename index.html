@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aya Hamrouni — Ingénieure Génie Logiciel</title>
+<meta content="Portfolio d'Aya Hamrouni, ingénieure en Génie Logiciel : microservices .NET, Angular, IA, DevOps." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div aria-hidden="true" class="bg-grid"></div>
+<div aria-hidden="true" class="bg-glow"></div>
+<!-- ============ NAVBAR ============ -->
+<header class="nav" id="nav">
+<a class="logo" href="#hero">aya<span>.</span>dev</a>
+<nav class="nav-links" id="navLinks">
+<a data-i18n="t1" href="#about">À propos</a>
+<a data-i18n="t2" href="#skills">Compétences</a>
+<a href="#pfe">PFE</a>
+<a href="#pfa">PFA</a>
+<a data-i18n="t3" href="#projects">Projets</a>
+<a data-i18n="t4" href="#certifs">Parcours</a>
+<a data-i18n="t178" href="#contact">Contact</a>
+</nav>
+<div class="nav-actions">
+<div class="lang-switch" id="langSwitch">
+<button aria-expanded="false" aria-haspopup="true" aria-label="Langue / Language" class="lang-btn" id="langBtn">
+<svg viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg>
+<span id="langCurrent">FR</span>
+</button>
+<ul class="lang-menu" id="langMenu" role="menu">
+<li><button data-lang="fr" role="menuitem"><b>FR</b> Français</button></li>
+<li><button data-lang="en" role="menuitem"><b>EN</b> English</button></li>
+<li><button data-lang="de" role="menuitem"><b>DE</b> Deutsch</button></li>
+<li><button data-lang="ar" role="menuitem"><b>AR</b> العربية</button></li>
+</ul>
+</div>
+<button aria-label="Changer de thème" class="icon-btn" id="themeToggle">
+<svg class="i-sun" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+<svg class="i-moon" viewbox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+</button>
+<button aria-label="Menu" class="icon-btn burger" id="burger">
+<svg viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+</button>
+</div>
+</header>
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+<div class="container hero-inner">
+<div class="hero-text">
+<p class="badge"><span class="dot"></span> <span data-i18n="t5">Disponible — Software Engineer · Alternance · PhD</span></p>
+<h1 data-i18n="t6">Salut, je suis <span class="grad">Aya Hamrouni</span></h1>
+<p class="hero-role"><span data-i18n="t7">Ingénieure</span> <span class="typed" id="typed"></span><span class="caret">|</span></p>
+<p class="honor"><span class="honor-ic">🏅</span><span data-i18n="t191">Mention Très Bien · 18/20 · Félicitations du jury</span></p><p class="hero-desc" data-i18n="t8">Ingénieure en Génie Logiciel <strong>diplômée de l'ESSAT Gabès</strong> en septembre 2026. Je conçois des plateformes <strong>microservices</strong> robustes, j'y intègre de l'<strong>IA</strong> utile et je les déploie avec une culture <strong>DevOps</strong>.</p>
+<div class="hero-cta">
+<a class="btn btn-primary" data-i18n="t9" href="#pfe">Voir mon PFE</a>
+<a class="btn btn-ghost" data-i18n="t10" href="#contact">Me contacter</a>
+</div>
+<div class="hero-stats">
+<div><strong data-count="6">0</strong><span data-i18n="t11">microservices PFE</span></div>
+<div><strong data-count="5">0</strong><span data-i18n="t12">fonctions IA</span></div>
+<div><strong data-count="4">0</strong><span data-i18n="t13">langues parlées</span></div>
+</div>
+</div>
+<div class="hero-card">
+<div class="term" dir="ltr">
+<div class="term-bar"><i></i><i></i><i></i><span>aya@stb:~/pfe</span></div>
+<pre class="term-body"><code><span class="c-mut">$</span> docker compose up -d
+<span class="c-ok">✔</span> auth-service        <span class="c-mut">.NET 9 · SQL Server</span>
+<span class="c-ok">✔</span> candidature-service <span class="c-mut">.NET 9 · PostgreSQL</span>
+<span class="c-ok">✔</span> stage-service       <span class="c-mut">.NET 9 · MongoDB</span>
+<span class="c-ok">✔</span> document-service    <span class="c-mut">.NET 9 · MongoDB</span>
+<span class="c-ok">✔</span> notification-service<span class="c-mut"> .NET 9 · MongoDB</span>
+<span class="c-ok">✔</span> ai-service          <span class="c-mut">FastAPI · Ollama</span>
+<span class="c-ok">✔</span> api-gateway         <span class="c-mut">YARP · rate limit</span>
+<span class="c-ok">✔</span> rabbitmq            <span class="c-mut">events</span>
+<span class="c-mut">$</span> <span class="c-acc">curl</span> /api/ai/score-cv
+{ <span class="c-key">"score"</span>: <span class="c-num">71.56</span> }<span class="blink">▌</span></code></pre>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+<div class="container">
+<div class="section-head reveal">
+<p class="kicker" data-i18n="t14">01 — À propos</p>
+<h2 data-i18n="t15">Du code propre, des architectures qui tiennent</h2>
+</div>
+<div class="about-grid">
+<div class="about-text reveal">
+<p data-i18n="t16">Je suis <strong>ingénieure en Génie Logiciel</strong>, diplômée de l'<strong>ESSAT Gabès</strong> en septembre 2026 avec la <strong>mention Très Bien (18/20)</strong> et les <strong>félicitations du jury</strong>. Mon projet de fin d'études, réalisé à la <strong>STB Bank</strong>, est une plateforme intelligente de gestion des stagiaires bâtie sur une architecture microservices, avec un service d'IA intégré.</p>
+<p data-i18n="t17">
+              Ce qui me motive : l'<strong>analyse de données</strong>, le <strong>DevOps</strong>,
+              l'<strong>IA</strong> et l'<strong>automatisation</strong>. Avant mon PFE, j'ai aussi géré
+              mon propre petit business — relation client, logistique et marketing — ce qui m'a appris
+              à livrer, à communiquer et à m'organiser.
+            </p>
+</div>
+<ul class="about-facts reveal">
+<li><span class="ic">🎓</span><div><b data-i18n="t18">Ingénieure diplômée</b><small data-i18n="t19">ESSAT Gabès · Sept. 2026</small></div></li>
+<li><span class="ic">🏦</span><div><b data-i18n="t20">Stage PFE — STB Bank</b><small data-i18n="t21">Avr. → Sept. 2026</small></div></li>
+<li><span class="ic">☸️</span><div><b data-i18n="t22">Préparation CKA</b><small data-i18n="t23">TED University · 2026</small></div></li>
+<li><span class="ic">📍</span><div><b data-i18n="t24">Gabès, Tunisie</b><small data-i18n="t25">Ouverte à la mobilité</small></div></li>
+</ul>
+</div>
+</div>
+</section>
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+<div class="container">
+<div class="section-head reveal">
+<p class="kicker" data-i18n="t26">02 — Compétences</p>
+<h2 data-i18n="t27">Ma boîte à outils</h2>
+</div>
+<div class="skills-grid">
+<article class="skill-card reveal">
+<h3 data-i18n="t28"><span class="sk-ic">⚙️</span>Backend</h3>
+<div class="chips">
+<span>ASP.NET Core 9</span><span>C#</span><span>Spring Boot</span><span>Java 17</span>
+<span>Node.js / Express</span><span>FastAPI</span><span>Python</span><span>REST APIs</span>
+<span>JWT · BCrypt · OTP</span>
+</div>
+</article>
+<article class="skill-card reveal">
+<h3 data-i18n="t29"><span class="sk-ic">🎨</span>Frontend</h3>
+<div class="chips">
+<span>Angular 21</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Tailwind CSS</span><span>HTML / CSS</span>
+<span>Standalone components</span>
+</div>
+</article>
+<article class="skill-card reveal">
+<h3 data-i18n="t30"><span class="sk-ic">🧩</span>Architecture</h3>
+<div class="chips">
+<span>Microservices</span><span>API Gateway (YARP)</span><span>RabbitMQ</span>
+<span>Event-driven</span><span>UML / PlantUML</span><span>Scrum</span>
+</div>
+</article>
+<article class="skill-card reveal">
+<h3 data-i18n="t31"><span class="sk-ic">🗄️</span>Bases de données</h3>
+<div class="chips">
+<span>SQL Server</span><span>PostgreSQL</span><span>MongoDB</span><span>MongoDB Atlas</span><span>MySQL</span>
+</div>
+</article>
+<article class="skill-card reveal">
+<h3 data-i18n="t32"><span class="sk-ic">🚀</span>DevOps &amp; Cloud</h3>
+<div class="chips">
+<span>Docker</span><span>Docker Compose</span><span>Kubernetes</span><span>CI/CD</span>
+<span>Git / GitHub</span><span>Linux</span>
+</div>
+</article>
+<article class="skill-card reveal">
+<h3 data-i18n="t33"><span class="sk-ic">🤖</span>IA &amp; Automatisation</h3>
+<div class="chips">
+<span>TF-IDF / NLP</span><span>Ollama (Llama 3)</span><span>Gemini API</span>
+<span>Tesseract OCR</span><span>n8n</span><span>Systèmes multi-agents</span><span>MCP</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ============ PFE ============ -->
+<section class="section" id="pfe">
+<div class="container">
+<div class="section-head reveal">
+<p class="kicker" data-i18n="t34">03 — Projet de fin d'études</p>
+<h2 data-i18n="t35">Plateforme Intelligente de Gestion des Stagiaires</h2>
+<p class="sub" data-i18n="t36">STB Bank · Avril → Septembre 2026 · Microservices .NET 9 · Angular 21 · IA locale</p>
+</div>
+<!-- Contexte -->
+<div class="ctx-grid">
+<article class="ctx reveal">
+<span class="ctx-ic">⚠️</span>
+<h3 data-i18n="t37">Le problème</h3>
+<p data-i18n="t38">À la STB, la gestion des stages reposait sur des <strong>e-mails, des fichiers partagés et un suivi manuel</strong> dispersé entre candidats, encadrants, RH et direction. Résultat : un suivi lent, des erreurs et aucune vue d'ensemble pour la direction.</p>
+</article>
+<article class="ctx reveal">
+<span class="ctx-ic">💡</span>
+<h3 data-i18n="t39">La solution</h3>
+<p data-i18n="t40">Une <strong>plateforme web unique</strong> qui couvre tout le cycle de vie d'un stage : publication des offres, candidature et présélection par IA, affectation des encadrants, tâches, journal de bord, documents, notifications et statistiques.</p>
+</article>
+<article class="ctx reveal">
+<span class="ctx-ic">👩‍💻</span>
+<h3 data-i18n="t41">Mon rôle</h3>
+<p data-i18n="t42">Conception et développement <strong>de bout en bout</strong> : analyse des besoins, modélisation UML, architecture microservices, backend .NET, service IA en Python, frontend Angular, conteneurisation Docker et documentation — en 4 sprints Scrum.</p>
+</article>
+</div>
+<!-- Acteurs -->
+<div class="actors reveal">
+<h3 class="mini-title" data-i18n="t43">5 profils, 5 espaces dédiés</h3>
+<div class="actor-row">
+<div class="actor"><b data-i18n="t44">🎓 Étudiant</b><small data-i18n="t45">Postule, dépose son CV, suit ses tâches et son journal de bord</small></div>
+<div class="actor"><b data-i18n="t46">🧑‍🏫 Encadrant</b><small data-i18n="t47">Accepte l'affectation, assigne des tâches, évalue le stagiaire</small></div>
+<div class="actor"><b data-i18n="t177">🗂️ RH</b><small data-i18n="t48">Publie les offres, trie les candidatures par score IA, crée les stages</small></div>
+<div class="actor"><b data-i18n="t49">🛡️ Administrateur</b><small data-i18n="t50">Gère les comptes et les rôles, supervise la plateforme</small></div>
+<div class="actor"><b data-i18n="t51">📊 Direction</b><small data-i18n="t52">Consulte les statistiques globales et le journal d'audit</small></div>
+</div>
+</div>
+<!-- Architecture -->
+<div aria-label="Schéma d'architecture" class="archi reveal">
+<div class="archi-row">
+<div class="node node-front">Angular 21<small data-i18n="t53">Frontend SPA · 5 espaces par rôle</small></div>
+</div>
+<div class="archi-arrow">↓ HTTPS · JWT</div>
+<div class="archi-row">
+<div class="node node-gw">API Gateway — YARP<small data-i18n="t54">Routage · Rate limiting · point d'entrée unique</small></div>
+</div>
+<div class="archi-arrow">↓</div>
+<div class="archi-row archi-services">
+<div class="node">Auth<small>SQL Server</small></div>
+<div class="node">Candidature<small>PostgreSQL</small></div>
+<div class="node">Stage<small>MongoDB</small></div>
+<div class="node">Document<small>MongoDB</small></div>
+<div class="node">Notification<small>MongoDB</small></div>
+<div class="node node-ai">AI Service<small>FastAPI · Ollama</small></div>
+</div>
+<div class="archi-arrow" data-i18n="t179">↕ événements</div>
+<div class="archi-row">
+<div class="node node-mq">RabbitMQ<small data-i18n="t55">candidature acceptée → stage créé + notification envoyée</small></div>
+</div>
+</div>
+<!-- Sprints -->
+<h3 class="mini-title reveal" data-i18n="t56">4 sprints pour construire la plateforme</h3>
+<div class="sprints">
+<div class="sprint reveal"><span>Sprint 1</span><b data-i18n="t57">Authentification &amp; comptes</b><small data-i18n="t58">Inscription protégée par reCAPTCHA, vérification OTP par e-mail, connexion JWT, mot de passe oublié, gestion des comptes par l'admin.</small></div>
+<div class="sprint reveal"><span>Sprint 2</span><b data-i18n="t59">Offres, candidatures &amp; matching IA</b><small data-i18n="t60">Publication d'offres, catalogue avec jauge de compatibilité, scoring CV ↔ offre, tri des candidatures pour les RH, acceptation / refus.</small></div>
+<div class="sprint reveal"><span>Sprint 3</span><b data-i18n="t61">Stages, tâches &amp; encadrants</b><small data-i18n="t62">Création automatique du stage, suggestion d'encadrants par IA, acceptation / réaffectation, tâches et journal de bord hebdomadaire.</small></div>
+<div class="sprint reveal"><span>Sprint 4</span><b data-i18n="t63">Documents, notifications &amp; IA</b><small data-i18n="t64">Dépôt de CV avec OCR, envoi de documents tracés, notifications en temps réel, chatbot, e-mails générés par IA, évaluation de fin de stage.</small></div>
+</div>
+<!-- Fonctionnalités -->
+<div class="pfe-grid">
+<article class="feat reveal">
+<h3 data-i18n="t65">🔐 Sécurité</h3>
+<ul>
+<li data-i18n="t66">JWT + refresh tokens, mots de passe hashés BCrypt</li>
+<li data-i18n="t67">Vérification e-mail par code OTP à l'inscription</li>
+<li data-i18n="t68">reCAPTCHA v2 sur inscription et connexion</li>
+<li data-i18n="t69">Contrôle d'accès par rôle sur chaque route</li>
+<li data-i18n="t70">Rate limiting au niveau de l'API Gateway</li>
+</ul>
+</article>
+<article class="feat reveal">
+<h3 data-i18n="t71">⚡ Communication asynchrone</h3>
+<ul>
+<li data-i18n="t72">RabbitMQ + bibliothèque partagée <code>STB.Shared</code></li>
+<li data-i18n="t73">Une candidature acceptée crée le stage automatiquement</li>
+<li data-i18n="t74">Les notifications partent sans couplage direct entre services</li>
+<li data-i18n="t75">Consommateurs en <code>BackgroundService</code>, une file par service</li>
+</ul>
+</article>
+<article class="feat feat-ai reveal">
+<h3 data-i18n="t76">🤖 Service d'IA (Python · FastAPI)</h3>
+<ul>
+<li data-i18n="t77"><b>Scoring CV ↔ offre</b> — TF-IDF + mots-clés techniques pondérés (40 / 60)</li>
+<li data-i18n="t78"><b>Suggestion d'encadrants</b> selon l'expertise, le département et la capacité</li>
+<li data-i18n="t79"><b>OCR</b> des CV et documents déposés (Tesseract)</li>
+<li data-i18n="t80"><b>Résumé automatique</b> du journal de bord hebdomadaire</li>
+<li data-i18n="t81"><b>Chatbot</b> d'assistance et <b>e-mails générés</b> par un LLM local (Ollama · Llama 3.2)</li>
+</ul>
+</article>
+<article class="feat reveal">
+<h3 data-i18n="t82">🧱 Qualité &amp; robustesse</h3>
+<ul>
+<li data-i18n="t83">Une base de données par service (polyglot persistence)</li>
+<li data-i18n="t84">Appels IA protégés : la plateforme reste utilisable si l'IA tombe</li>
+<li data-i18n="t85">Infrastructure conteneurisée avec Docker Compose</li>
+<li data-i18n="t86">Swagger sur chaque service, modélisation UML complète (PlantUML)</li>
+<li data-i18n="t87">Tableaux de bord statistiques et traçabilité des documents</li>
+</ul>
+</article>
+</div>
+<!-- Galerie -->
+<h3 class="mini-title reveal" data-i18n="t88">L'application en images</h3>
+<div class="gallery">
+<figure class="g-item g-wide reveal"><button class="shot" data-full="assets/img/pfe-connexion.jpg"><img alt="Page de connexion aux couleurs de la STB" data-i18n-alt="t157" loading="lazy" src="assets/img/pfe-connexion.jpg"/></button><figcaption data-i18n="t89">Connexion sécurisée (reCAPTCHA)</figcaption></figure>
+<figure class="g-item reveal"><button class="shot" data-full="assets/img/pfe-otp.jpg"><img alt="Saisie du code de vérification OTP" data-i18n-alt="t158" loading="lazy" src="assets/img/pfe-otp.jpg"/></button><figcaption data-i18n="t90">Vérification par code OTP</figcaption></figure>
+<figure class="g-item reveal"><button class="shot" data-full="assets/img/pfe-offres-score.jpg"><img alt="Catalogue des offres avec score de compatibilité IA" data-i18n-alt="t159" loading="lazy" src="assets/img/pfe-offres-score.jpg"/></button><figcaption data-i18n="t91">Offres + jauge de compatibilité IA</figcaption></figure>
+<figure class="g-item g-wide reveal"><button class="shot" data-full="assets/img/pfe-rh-candidatures.jpg"><img alt="Espace RH : candidatures triées par score" data-i18n-alt="t160" loading="lazy" src="assets/img/pfe-rh-candidatures.jpg"/></button><figcaption data-i18n="t92">Espace RH — candidatures triées par score</figcaption></figure>
+<figure class="g-item reveal"><button class="shot" data-full="assets/img/pfe-decision.jpg"><img alt="Traitement d'une candidature" data-i18n-alt="t161" loading="lazy" src="assets/img/pfe-decision.jpg"/></button><figcaption data-i18n="t93">Acceptation / refus d'une candidature</figcaption></figure>
+<figure class="g-item reveal"><button class="shot" data-full="assets/img/pfe-suggestion-ia.jpg"><img alt="Suggestion d'encadrants par l'IA" data-i18n-alt="t162" loading="lazy" src="assets/img/pfe-suggestion-ia.jpg"/></button><figcaption data-i18n="t94">Suggestion d'encadrants par l'IA</figcaption></figure>
+<figure class="g-item g-wide reveal"><button class="shot" data-full="assets/img/pfe-encadrant.jpg"><img alt="Tableau de bord encadrant" data-i18n-alt="t163" loading="lazy" src="assets/img/pfe-encadrant.jpg"/></button><figcaption data-i18n="t95">Tableau de bord encadrant</figcaption></figure>
+<figure class="g-item reveal"><button class="shot" data-full="assets/img/pfe-journal.jpg"><img alt="Journal de bord hebdomadaire" data-i18n-alt="t164" loading="lazy" src="assets/img/pfe-journal.jpg"/></button><figcaption data-i18n="t96">Journal de bord hebdomadaire</figcaption></figure>
+<figure class="g-item reveal"><button class="shot" data-full="assets/img/pfe-resume-ia.jpg"><img alt="Résumé du journal généré par IA" data-i18n-alt="t165" loading="lazy" src="assets/img/pfe-resume-ia.jpg"/></button><figcaption data-i18n="t97">Résumé du journal généré par IA</figcaption></figure>
+<figure class="g-item g-wide reveal"><button class="shot" data-full="assets/img/pfe-admin.jpg"><img alt="Espace administrateur" data-i18n-alt="t166" loading="lazy" src="assets/img/pfe-admin.jpg"/></button><figcaption data-i18n="t98">Administration des comptes et des rôles</figcaption></figure>
+<figure class="g-item reveal"><button class="shot" data-full="assets/img/pfe-documents.jpg"><img alt="Gestion des documents" data-i18n-alt="t167" loading="lazy" src="assets/img/pfe-documents.jpg"/></button><figcaption data-i18n="t99">Documents et traçabilité</figcaption></figure>
+<figure class="g-item reveal"><button class="shot" data-full="assets/img/pfe-notifications.jpg"><img alt="Centre de notifications" data-i18n-alt="t168" loading="lazy" src="assets/img/pfe-notifications.jpg"/></button><figcaption data-i18n="t100">Notifications automatiques</figcaption></figure>
+</div>
+<!-- Soutenance -->
+<div class="defense reveal">
+<div class="defense-head">
+<span class="defense-badge">🎓</span>
+<div>
+<h3 class="mini-title" data-i18n="t180">La soutenance — 26 septembre 2026</h3>
+<p data-i18n="t181">J'ai présenté et défendu mon projet devant le jury de l'ESSAT Gabès, entourée de mes proches. Résultat : <strong>mention Très Bien, 18/20 et les félicitations du jury</strong> — la plus belle conclusion de cinq mois de travail à la STB et de mon parcours d'ingénieure.</p>
+</div>
+</div>
+<div class="defense-grid">
+<figure class="d-item d-wide"><button class="shot" data-full="assets/img/sout-presentation.jpg"><img alt="Présentation de la partie sécurité devant le jury" data-i18n-alt="t182" loading="lazy" src="assets/img/sout-presentation.jpg"/></button><figcaption data-i18n="t182">Présentation de la partie sécurité devant le jury</figcaption></figure>
+<figure class="d-item"><button class="shot" data-full="assets/img/sout-demo.jpg"><img alt="Démonstration de la plateforme" data-i18n-alt="t183" loading="lazy" src="assets/img/sout-demo.jpg"/></button><figcaption data-i18n="t183">Démonstration de la plateforme</figcaption></figure>
+<figure class="d-item"><button class="shot" data-full="assets/img/sout-rapport.jpg"><img alt="Le rapport final de PFE" data-i18n-alt="t184" loading="lazy" src="assets/img/sout-rapport.jpg"/></button><figcaption data-i18n="t184">Le rapport final de PFE</figcaption></figure>
+<figure class="d-item"><button class="shot" data-full="assets/img/sout-class2026.jpg"><img alt="Class of 2026" data-i18n-alt="t185" loading="lazy" src="assets/img/sout-class2026.jpg"/></button><figcaption data-i18n="t185">Class of 2026</figcaption></figure>
+<figure class="d-item"><button class="shot" data-full="assets/img/sout-aya.jpg"><img alt="Fière du chemin parcouru" data-i18n-alt="t186" loading="lazy" src="assets/img/sout-aya.jpg"/></button><figcaption data-i18n="t186">Fière du chemin parcouru</figcaption></figure>
+<figure class="d-item d-wide"><button class="shot" data-full="assets/img/sout-proches.jpg"><img alt="Entourée de mes proches à l'ESSAT Gabès" data-i18n-alt="t187" loading="lazy" src="assets/img/sout-proches.jpg"/></button><figcaption data-i18n="t187">Entourée de mes proches à l'ESSAT Gabès</figcaption></figure>
+</div>
+</div>
+<div class="stack-line reveal">
+<span>.NET 9</span><span>ASP.NET Core</span><span>Angular 21</span><span>YARP</span><span>RabbitMQ</span>
+<span>SQL Server</span><span>PostgreSQL</span><span>MongoDB</span><span>FastAPI</span><span>Ollama</span>
+<span>Tesseract</span><span>Docker</span><span>Scrum</span><span>PlantUML</span>
+</div>
+</div>
+</section>
+<!-- ============ PFA ============ -->
+<section class="section" id="pfa">
+<div class="container">
+<div class="section-head reveal">
+<p class="kicker" data-i18n="t101">04 — Projet de fin d'année (PFA)</p>
+<h2>MediLink</h2>
+<p class="sub" data-i18n="t102">2025 · Application web full-stack · Next.js + Appwrite</p>
+</div>
+<div class="projects-grid">
+<!-- ===== PFA : MediLink ===== -->
+<article class="project project-featured reveal">
+<div class="pf-media">
+<button aria-label="Agrandir : tableau de bord admin" class="shot shot-main" data-full="assets/img/medilink-dashboard.jpg">
+<img alt="MediLink — tableau de bord administrateur" data-i18n-alt="t169" loading="lazy" src="assets/img/medilink-dashboard.jpg"/>
+</button>
+<div class="shots">
+<button aria-label="Agrandir : accueil patient" class="shot" data-full="assets/img/medilink-accueil.jpg"><img alt="MediLink — accueil patient" data-i18n-alt="t170" loading="lazy" src="assets/img/medilink-accueil.jpg"/></button>
+<button aria-label="Agrandir : prise de rendez-vous" class="shot" data-full="assets/img/medilink-rdv.jpg"><img alt="MediLink — prise de rendez-vous" data-i18n-alt="t171" loading="lazy" src="assets/img/medilink-rdv.jpg"/></button>
+<button aria-label="Agrandir : planification" class="shot" data-full="assets/img/medilink-planifier.jpg"><img alt="MediLink — planification d'un rendez-vous" data-i18n-alt="t172" loading="lazy" src="assets/img/medilink-planifier.jpg"/></button>
+</div>
+</div>
+<div class="pf-body">
+<div class="p-top"><span class="tag tag-pfa">PFA</span><span class="year">2025</span></div>
+<h3 data-i18n="t103">MediLink — Gestion des patients &amp; rendez-vous médicaux</h3>
+<p data-i18n="t104">
+                Application web full-stack qui permet à un patient de s'inscrire, de compléter son dossier médical
+                et de prendre rendez-vous en quelques secondes, pendant qu'un administrateur gère et planifie
+                toutes les demandes depuis un tableau de bord.
+              </p>
+<ul class="pf-list">
+<li data-i18n="t105"><b>Parcours patient</b> : inscription, infos personnelles, dossier médical (allergies, traitements, antécédents), médecin traitant</li>
+<li data-i18n="t106"><b>Vérification d'identité</b> : type et numéro de pièce, upload du scan, consentements RGPD</li>
+<li data-i18n="t107"><b>Rendez-vous</b> : choix du médecin, date/heure, motif et notes</li>
+<li data-i18n="t108"><b>Espace admin</b> protégé par passkey : statistiques (planifiés / en attente / annulés), planifier ou annuler</li>
+<li data-i18n="t109"><b>Backend Appwrite</b> : authentification, base de données (patients, médecins, rendez-vous) et stockage de fichiers</li>
+</ul>
+<div class="chips sm"><span>Next.js 14</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>shadcn/ui</span><span>React Hook Form</span><span>Zod</span><span>Appwrite</span></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+<div class="container">
+<div class="section-head reveal">
+<p class="kicker" data-i18n="t110">05 — Projets académiques</p>
+<h2 data-i18n="t111">E-commerce .NET &amp; autres réalisations</h2>
+</div>
+<div class="filters reveal" role="tablist">
+<button class="filter active" data-filter="all" data-i18n="t112">Tous</button>
+<button class="filter" data-filter="y1" data-i18n="t113">Projet .NET</button>
+<button class="filter" data-filter="stage" data-i18n="t218">Stages</button>
+<button class="filter" data-filter="other" data-i18n="t114">Autres</button>
+</div>
+<div class="projects-grid">
+<!-- ===== Projet .NET : e-commerce ===== -->
+<article class="project project-featured reverse reveal" data-cat="y1">
+<div class="pf-media">
+<button aria-label="Agrandir : catalogue produits" class="shot shot-main" data-full="assets/img/ecom-produits.jpg">
+<img alt="Boutique .NET — catalogue des produits" data-i18n-alt="t173" loading="lazy" src="assets/img/ecom-produits.jpg"/>
+</button>
+<div class="shots">
+<button aria-label="Agrandir : panier" class="shot" data-full="assets/img/ecom-panier.jpg"><img alt="Boutique .NET — panier" data-i18n-alt="t174" loading="lazy" src="assets/img/ecom-panier.jpg"/></button>
+<button aria-label="Agrandir : passer la commande" class="shot" data-full="assets/img/ecom-commande.jpg"><img alt="Boutique .NET — passer la commande" data-i18n-alt="t175" loading="lazy" src="assets/img/ecom-commande.jpg"/></button>
+<button aria-label="Agrandir : gestion des rôles" class="shot" data-full="assets/img/ecom-roles.jpg"><img alt="Boutique .NET — administration des rôles" data-i18n-alt="t176" loading="lazy" src="assets/img/ecom-roles.jpg"/></button>
+</div>
+</div>
+<div class="pf-body">
+<div class="p-top"><span class="tag tag-y1" data-i18n="t115">Projet .NET</span><span class="year" data-i18n="t224">Nov. 2025</span></div>
+<h3 data-i18n="t116">Boutique en ligne — ASP.NET Core MVC</h3>
+<p data-i18n="t117">
+                Site e-commerce de bijoux et d'objets de décoration : catalogue par catégories, panier dynamique,
+                passage de commande et back-office sécurisé par rôles.
+              </p>
+<ul class="pf-list">
+<li data-i18n="t118"><b>Catalogue</b> : produits avec photo uploadée, filtrage par catégorie, recherche et pagination</li>
+<li data-i18n="t119"><b>Panier dynamique</b> : ajout, +/−, suppression et total mis à jour en AJAX sans recharger la page</li>
+<li data-i18n="t120"><b>Commande</b> : checkout réservé aux utilisateurs connectés, enregistrement de la commande et de ses lignes</li>
+<li data-i18n="t121"><b>Sécurité</b> : ASP.NET Identity (inscription, connexion), rôles Admin / Manager, page « accès refusé »</li>
+<li data-i18n="t122"><b>Architecture</b> : MVC + Repository Pattern, injection de dépendances, EF Core code-first avec migrations</li>
+</ul>
+<div class="chips sm"><span>ASP.NET Core 9 MVC</span><span>C#</span><span>Entity Framework Core</span><span>SQL Server</span><span>ASP.NET Identity</span><span>Razor</span><span>Bootstrap</span><span>jQuery / AJAX</span></div>
+</div>
+</article>
+<!-- ===== Autres ===== -->
+<article class="project project-featured reverse reveal" data-cat="stage">
+<div class="pf-media">
+<div class="bot-flow" dir="ltr" aria-label="Fonctionnement du chatbot">
+<div class="bf-row"><div class="bf-node bf-user">👤 <span data-i18n="t203">Visiteur</span><small>FR · EN · AR · UR · HI…</small></div></div>
+<div class="bf-arrow">↓ <span data-i18n="t204">message</span></div>
+<div class="bf-row"><div class="bf-node bf-nest">NestJS API<small>/chat · /chat/welcome</small></div></div>
+<div class="bf-arrow">↓</div>
+<div class="bf-row bf-two">
+<div class="bf-node bf-tr">Google Translate<small data-i18n="t205">détection de la langue + traduction vers l'arabe</small></div>
+<div class="bf-node bf-df">Dialogflow CX<small data-i18n="t206">agent en arabe · intentions</small></div>
+</div>
+<div class="bf-arrow">↓ <span data-i18n="t207">réponse traduite dans la langue du visiteur</span></div>
+<div class="bf-row"><div class="bf-node bf-user">💬 <span data-i18n="t208">Réponse + conseil d'écrire en arabe</span></div></div>
+<div class="bf-chat">
+<div class="bf-bubble me" dir="auto">Bonjour, quels légumes sont de saison ?</div>
+<div class="bf-bubble bot" dir="rtl">ما هي الخضروات المتوفرة في هذا الموسم؟</div>
+<div class="bf-note" data-i18n="t209">Exemple de traduction envoyée à l'agent</div>
+</div>
+</div>
+</div>
+<div class="pf-body">
+<div class="p-top"><span class="tag tag-stage" data-i18n="t210">Stage de 2ᵉ année</span><span class="year" data-i18n="t222">Juil. 2025</span></div>
+<h3 data-i18n="t211">Chatbot multilingue pour le site Kharaj (خراج)</h3>
+<p data-i18n="t212">Kharaj est une plateforme de produits agricoles en langue arabe. J'ai développé le backend d'un chatbot capable de comprendre et de répondre aux visiteurs dans leur propre langue, tout en s'appuyant sur un agent conversationnel conçu en arabe.</p>
+<ul class="pf-list">
+<li data-i18n="t213"><b>Agent Dialogflow CX</b> en arabe, interrogé par session depuis le backend</li>
+<li data-i18n="t214"><b>Traduction automatique</b> : détection de la langue du visiteur, traduction vers l'arabe puis retour dans sa langue (Google Cloud Translation)</li>
+<li data-i18n="t215"><b>Message d'accueil</b> adapté à la langue du navigateur et avertissement multilingue (FR, EN, arabe saoudien, ourdou, hindi…)</li>
+<li data-i18n="t216"><b>Backend NestJS</b> : API REST, CORS pour le frontend Angular, gestion des utilisateurs avec TypeORM + MySQL</li>
+<li data-i18n="t217"><b>Catalogue produits</b> : import des légumes (saisons, valeurs nutritionnelles, stock par entrepôt) dans Firebase Firestore</li>
+</ul>
+<div class="chips sm"><span>NestJS</span><span>TypeScript</span><span>Dialogflow CX</span><span>Google Cloud Translation</span><span>TypeORM</span><span>MySQL</span><span>Firebase</span><span>Angular</span></div>
+</div>
+</article>
+<article class="project project-featured reverse reveal" data-cat="other">
+<div class="pf-media">
+<button class="shot shot-main" data-full="assets/img/ao-vehicules.jpg"><img src="assets/img/ao-vehicules.jpg" alt="Auto Occasion — catalogue des véhicules" data-i18n-alt="t225" loading="lazy"/></button>
+<div class="shots">
+<button class="shot" data-full="assets/img/ao-chatbot.jpg"><img style="object-position: right center" src="assets/img/ao-chatbot.jpg" alt="Assistant IA qui conseille un véhicule selon le budget" data-i18n-alt="t226" loading="lazy"/></button>
+<button class="shot" data-full="assets/img/ao-formulaire.jpg"><img src="assets/img/ao-formulaire.jpg" alt="Fiche véhicule avec photos et documents" data-i18n-alt="t227" loading="lazy"/></button>
+<button class="shot" data-full="assets/img/ao-panier.jpg"><img src="assets/img/ao-panier.jpg" alt="Panier et paiement" data-i18n-alt="t228" loading="lazy"/></button>
+</div>
+<button class="shot" data-full="assets/img/ao-clients.jpg" hidden><img src="assets/img/ao-clients.jpg" alt="Gestion des clients" data-i18n-alt="t229" loading="lazy"/></button>
+</div>
+<div class="pf-body">
+<div class="p-top"><span class="tag tag-other" data-i18n="t123">Projet d'examen</span><span class="year" data-i18n="t230">Janv. 2026</span></div>
+<h3 data-i18n="t124">Auto Occasion — système multi-agents pour voitures d'occasion</h3>
+<p data-i18n="t125">Application MERN de vente de voitures d'occasion où des agents IA assistent les clients et l'équipe commerciale. Réalisée en binôme avec Zayneb Chokri.</p>
+<ul class="pf-list">
+<li data-i18n="t231"><b>Catalogue véhicules</b> : CRUD complet, upload de photos (max 10) et de documents (carte grise, contrôle technique) avec Multer</li>
+<li data-i18n="t232"><b>Clients & préférences</b> : marques favorites et budget maximum pour personnaliser les propositions</li>
+<li data-i18n="t233"><b>Panier & commandes</b> : ajout au panier, paiement et suivi des commandes</li>
+<li data-i18n="t234"><b>Agent conversationnel</b> : chatbot commercial propulsé par un LLM local (Ollama), relié à un agent n8n avec mémoire de session</li>
+<li data-i18n="t235"><b>Agent marketing</b> : génération d'e-mails personnalisés par l'IA (Llama 3) et serveur MCP qui expose les véhicules disponibles aux agents IA</li>
+</ul>
+<div class="chips sm"><span>MongoDB Atlas</span><span>Express</span><span>React 19</span><span>Node.js</span><span>Material UI</span><span>Vite</span><span>Multer</span><span>Ollama</span><span>n8n</span><span>MCP</span></div>
+</div>
+</article>
+<article class="project project-featured reveal" data-cat="other">
+<div class="pf-media">
+<button class="shot shot-main" data-full="assets/img/gs-admin.jpg"><img src="assets/img/gs-admin.jpg" alt="Gestion des stages — vue administrateur" data-i18n-alt="t193" loading="lazy"/></button>
+<div class="shots">
+<button class="shot" data-full="assets/img/gs-login.jpg"><img src="assets/img/gs-login.jpg" alt="Page de connexion avec comptes de test" data-i18n-alt="t194" loading="lazy"/></button>
+<button class="shot" data-full="assets/img/gs-encadrant.jpg"><img src="assets/img/gs-encadrant.jpg" alt="Espace encadrant — valider ou refuser un stage" data-i18n-alt="t195" loading="lazy"/></button>
+<button class="shot" data-full="assets/img/gs-form.jpg"><img src="assets/img/gs-form.jpg" alt="Formulaire de modification d'un stage" data-i18n-alt="t196" loading="lazy"/></button>
+</div>
+<button class="shot" data-full="assets/img/gs-etudiant.jpg" hidden><img src="assets/img/gs-etudiant.jpg" alt="Espace étudiant — mes stages" data-i18n-alt="t197" loading="lazy"/></button>
+</div>
+<div class="pf-body">
+<div class="p-top"><span class="tag tag-other" data-i18n="t126">Mini-projet</span><span class="year" data-i18n="t223">Janv. 2026</span></div>
+<h3 data-i18n="t127">Gestion des stages — Spring Boot &amp; Angular sur Kubernetes</h3>
+<p data-i18n="t128">Application full-stack de suivi des stages avec 3 espaces selon le rôle, conteneurisée avec Docker puis déployée sur un cluster Kubernetes.</p>
+<ul class="pf-list">
+<li data-i18n="t198"><b>Authentification JWT</b> : Spring Security, filtre JWT, redirection automatique selon le rôle</li>
+<li data-i18n="t199"><b>3 rôles</b> : l'étudiant propose ses stages, l'encadrant les valide ou les refuse, l'admin gère tout</li>
+<li data-i18n="t200"><b>Cycle de vie d'un stage</b> : en attente → en cours → validé / refusé, avec badges de statut</li>
+<li data-i18n="t201"><b>Frontend Angular 21</b> : composants standalone, guard de route, intercepteur HTTP, Bootstrap 5</li>
+<li data-i18n="t202"><b>Kubernetes</b> : 3 déploiements (MySQL, backend, frontend), services internes et LoadBalancer</li>
+</ul>
+<div class="chips sm"><span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>JWT</span><span>MySQL</span><span>Angular 21</span><span>Bootstrap 5</span><span>Docker</span><span>Kubernetes</span></div>
+</div>
+</article>
+<article class="project reveal" data-cat="other">
+<div class="p-top"><span class="tag tag-other" data-i18n="t129">Projet perso</span><span class="year">2026</span></div>
+<h3>Gemini Agent Service</h3>
+<p data-i18n="t130">Microservice Spring Boot qui intègre l'API Google Gemini, pensé pour être exposé à des assistants IA via un serveur MCP.</p>
+<div class="chips sm"><span>Java 17</span><span>Spring Boot</span><span>Maven</span><span>Gemini API</span></div>
+</article>
+</div>
+</div>
+</section>
+<!-- ============ PARCOURS ============ -->
+<section class="section" id="certifs">
+<div class="container">
+<div class="section-head reveal">
+<p class="kicker" data-i18n="t131">06 — Parcours</p>
+<h2 data-i18n="t132">Formation, certifications &amp; langues</h2>
+</div>
+<div class="parcours">
+<ol class="timeline reveal">
+<li><span class="t-date" data-i18n="t139">Sept. 2026</span><b data-i18n="t140">Diplôme d'ingénieur — Génie Logiciel</b><small data-i18n="t192">ESSAT Gabès · Mention Très Bien · Félicitations du jury</small></li>
+<li><span class="t-date" data-i18n="t188">26 sept. 2026</span><b data-i18n="t189">Soutenance du PFE 🎓</b><small data-i18n="t190">Mention Très Bien · 18/20 · Félicitations du jury</small></li>
+<li><span class="t-date" data-i18n="t133">Avr. → Sept. 2026</span><b data-i18n="t134">Stage PFE — STB Bank</b><small data-i18n="t135">Plateforme intelligente de gestion des stagiaires</small></li>
+<li><span class="t-date" data-i18n="t136">Juillet 2026</span><b data-i18n="t137">Formation préparation CKA</b><small data-i18n="t138">Certified Kubernetes Administrator — TED University</small></li>
+<li><span class="t-date" data-i18n="t219">Juillet 2025</span><b data-i18n="t220">Stage de 2ᵉ année — Kharaj</b><small data-i18n="t221">Chatbot multilingue · NestJS · Dialogflow CX</small></li>
+<li><span class="t-date" data-i18n="t141">Avant le PFE</span><b data-i18n="t142">Auto-entrepreneuriat</b><small data-i18n="t143">Relation client, logistique, marketing</small></li>
+</ol>
+<div class="langs reveal">
+<h3 data-i18n="t144">Langues</h3>
+<div class="lang"><span data-i18n="t145">Arabe</span><div class="bar"><i style="--w:100%"></i></div><small data-i18n="t146">Maternelle</small></div>
+<div class="lang"><span data-i18n="t147">Français</span><div class="bar"><i style="--w:90%"></i></div><small data-i18n="t148">Courant</small></div>
+<div class="lang"><span data-i18n="t149">Anglais</span><div class="bar"><i style="--w:85%"></i></div><small data-i18n="t150">Courant</small></div>
+<div class="lang"><span data-i18n="t151">Allemand</span><div class="bar"><i style="--w:60%"></i></div><small data-i18n="t152">Intermédiaire · prépa B2</small></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+<div class="container">
+<div class="contact-card reveal">
+<p class="kicker" data-i18n="t153">07 — Contact</p>
+<h2 data-i18n="t154">Travaillons ensemble</h2>
+<p data-i18n="t155">Je suis ouverte à un poste de <strong>Software Engineer</strong>, à une <strong>alternance</strong> ou à un <strong>doctorat (PhD)</strong> en développement logiciel, DevOps ou IA. Écris-moi !</p>
+<div class="contact-links">
+<a class="btn btn-primary" href="mailto:ayahamrouni451@gmail.com">✉️ ayahamrouni451@gmail.com</a>
+<a class="btn btn-ghost" href="tel:+21629956010">📞 +216 29 956 010</a>
+<a class="btn btn-ghost" href="https://github.com/ayahamrouni123" rel="noopener" target="_blank">GitHub</a>
+<a class="btn btn-ghost" href="https://www.linkedin.com/in/aya-hamrouni-829933338/" rel="noopener" target="_blank">LinkedIn</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<p>© <span id="year"></span> Aya Hamrouni — <span data-i18n="t156">conçu &amp; codé avec ❤️ à Gabès</span></p>
+</footer>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
